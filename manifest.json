@@ -1,7 +1,7 @@
 {
 	"manifest_version":2,
-	"name": "Edtguide.com extension",
-	"version": "1.0",
+	"name": "Edtguide.com Notification",
+	"version": "1.0.0",
 	"description": "Edtguide.com แหล่งรวมข้อมูล กิน ดื่ม เที่ยว ร้านอาหารแนะนํา ร้านอาหาร ร้านอาหารอร่อย สถานที่ท่องเที่ยว แหล่งท่องเที่ยว และยังมีข้อมูลอีกเพียบ",
 	"background": {
 					"scripts":["js/jquery.tools.min_1.7.2.js","js/db.js","js/common.js","js/background.js"]
@@ -50,5 +50,5 @@
 		"*"
 	],
 	"content_security_policy":"script-src 'self' https://ssl.google-analytics.com; object-src 'self'"
-	//,"key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC9SYCUgNaiexZYEpICJDOGBBHn3H1aVxe6PLS7QQaUB11wPIlBcYpKs4Dk6/ywBoVwZINOSIFAOSf2HdMZqVYh3DATgshc+dfNtXbN6gg11mPZF21unLIelKMZcADRszvNodTfAEtKDnazfs+xezarJH/PY7bODvaRZ9jfTzrGzQIDAQAB"
+	,"key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC9SYCUgNaiexZYEpICJDOGBBHn3H1aVxe6PLS7QQaUB11wPIlBcYpKs4Dk6/ywBoVwZINOSIFAOSf2HdMZqVYh3DATgshc+dfNtXbN6gg11mPZF21unLIelKMZcADRszvNodTfAEtKDnazfs+xezarJH/PY7bODvaRZ9jfTzrGzQIDAQAB"
 }

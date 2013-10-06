@@ -4,6 +4,12 @@ chrome.runtime.onInstalled.addListener(function(obj){
 	Debug("Installed");
 	createDatabase();
 	//createNotification({icon:"images/icon128.png",title:"Welcome Edtguide Notification"});
+	var t = new Date().getTime();
+	query("INSERT INTO notification(id,type,data,time,url,reading) VALUES(null,'newreview','{\"type\":\"newreview\",\"icon\":\"http://ed.files-media.com/di/logo.png\",\"title\":\"AKA YAKINIKU\",\"desc\":\"AKA อาหารญี่ปุ่นปิ้งย่างคุณภาพความคุ้มค่า\",\"url\":\"http://review.edtguide.com/405793_\",\"img\":\"http://ed.files-media.com/ud/review/1/136/405793/01.jpg\",\"id\":1381038419829}',"+t+",'http://review.edtguide.com/405793_','false')");
+	query("INSERT INTO notification(id,type,data,time,url,reading) VALUES(null,'newreview','{\"type\":\"newreview\",\"icon\":\"\",\"title\":\"Soi8 red beat\",\"desc\":\"พบกับความสุข จัดเต็มด้วยการแสดงสุดอลังการที่ Soi8 red beat\",\"url\":\"http://review.edtguide.com/406017_\",\"img\":\"http://ed.files-media.com/ud/review/1/136/406017/Soi8-red-beat01.jpg\",\"id\":1381038802039}',"+t+",'http://review.edtguide.com/406017_','false')");
+	query("INSERT INTO notification(id,type,data,time,url,reading) VALUES(null,'newreview','{\"type\":\"newreview\",\"icon\":\"\",\"title\":\"ภัตตาคารจีน ฟุ หมาน เหลา\",\"desc\":\"ความอร่อยที่คุ้มค่าคุ้มราคา ต้องมาที่ภัตตาคารจีน ฟุ หมาน เหลา..\",\"url\":\"http://review.edtguide.com/404749_\",\"img\":\"http://ed.files-media.com/ud/review/1/135/404749/Fu-Marn-Lau-280x210.jpg\",\"id\":1381038921052}',"+t+",'http://review.edtguide.com/404749_','false')");
+	query("INSERT INTO notification(id,type,data,time,url,reading) VALUES(null,'newreview','{\"type\":\"newreview\",\"icon\":\"images/icon128.png\",\"title\":\"ตลาดนัดรถไฟ ศรีนครินทร์\",\"desc\":\"เป็นตลาดกลางคืนที่เอาใจคนที่ชื่นชอบของโบราณ\",\"url\":\"http://review.edtguide.com/399708_\",\"img\":\"http://ed.files-media.com/ud/review/1/134/399708/08.jpg\",\"id\":1381039123830}',"+t+",'http://review.edtguide.com/399708_','false')");
+
 });
 
 chrome.runtime.onUpdateAvailable.addListener(function(obj){

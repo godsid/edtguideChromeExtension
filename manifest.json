@@ -1,7 +1,7 @@
 {
 	"manifest_version":2,
 	"name": "Edtguide.com Notification",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "Edtguide.com แหล่งรวมข้อมูล กิน ดื่ม เที่ยว ร้านอาหารแนะนํา ร้านอาหาร ร้านอาหารอร่อย สถานที่ท่องเที่ยว แหล่งท่องเที่ยว",
 	"background": {
 					"scripts":["js/jquery.tools.min_1.7.2.js","js/db.js","js/common.js","js/background.js"]

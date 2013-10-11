@@ -81,7 +81,7 @@ function pushReceive(data){
 };
 function getPushData(url){
 	$.get(url,function(resp){
-			JSON
+			console.log(resp);
 			resp.id = new Date().getTime();
 			var sql = "INSERT INTO notification(id,type,data,time,url,reading) VALUES(null,'"+resp.type+"','"+JSON.stringify(resp)+"',"+resp.id+",'"+resp.url+"','false')";
 			resp.type = "image";

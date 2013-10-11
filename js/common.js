@@ -94,7 +94,7 @@ function createNotificationByType(data){
 	chrome.notifications.create("edtguide-"+data.id,{
 		type:data.type,
 		title:data.title,
-		message:data.desc,
+		message:data.desc.replace(/ /g,"\t"),
 		iconUrl:data.icon,
 		imageUrl:data.img
 	},function(id){

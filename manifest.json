@@ -50,5 +50,5 @@
 		"*"
 	],
 	"content_security_policy":"script-src 'self' https://ssl.google-analytics.com; object-src 'self'"
-	//,"key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC9SYCUgNaiexZYEpICJDOGBBHn3H1aVxe6PLS7QQaUB11wPIlBcYpKs4Dk6/ywBoVwZINOSIFAOSf2HdMZqVYh3DATgshc+dfNtXbN6gg11mPZF21unLIelKMZcADRszvNodTfAEtKDnazfs+xezarJH/PY7bODvaRZ9jfTzrGzQIDAQAB"
+	,"key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAh9eOww7qVbsj/BVar7YLXAgiLYhVf5AqaN26EWmQGcmIojYFLWHXjLpX0haIWlU6RngxjeBo2jpqVQrshAip6+wIbOEw0kqf9RreXkDT4W3xoCazjl5erILmy3R2MflePbnE1t0NsOtbB1qiHm9jWAnvU96W0yc4usaw5GfRF/qGKEljLtVKJNqNShHnrOWSA42l77DZoMKqgOl9Oexv5ljqjhTQOP0XzHtsM3d7onTkkXSvTHZYtZBGDR1bfzBOb50yuVbtoJb9tsGH7Nr13y/+6TPhReLKnf3EgbIePwS7N8ZiUbIPw3cDeMb1lyuudoHUYA1W+tNt3kzDyxQ9CwIDAQAB"
 }

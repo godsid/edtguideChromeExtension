@@ -8,9 +8,7 @@ var staticUrl = 'http://ja.files-media.com/image';
 */
 var debug = false;
 
-/* Google Analytics */
-var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-18384901-14']);
+
 _gaq.push(['_trackPageview','/ext/popup.html']);
 
 if(localStorage.debug!=undefined&&localStorage.debug=='true'){
@@ -91,9 +89,9 @@ function getNotification(){
 			});
 			
 			$('.notification .list').click(function(e){
-				_gaq.push(['_trackEvent','popup_review','clicked']);
-				
+				_gaq.push(['_trackEvent','popup','click',$(this).find('.txt-red').html()]);
 				chrome.tabs.create({url:$(this).find('.detail a:first').attr('href')});
+
 			});
 		}else{
 			//chrome.tabs.create({url:wwwurl});
@@ -110,16 +108,11 @@ getNotification();
 
 $('.header a').click(function(){
 	chrome.tabs.create({url:$(this).attr('href')});
+	_gaq.push(['_trackEvent','popup','click','logo']);
 });
 
 
-setTimeout(function(){
-	(function() {
-	  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-	  ga.src = 'https://ssl.google-analytics.com/ga.js';
-	  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	})();
-},2000);
+
 
 
 /*

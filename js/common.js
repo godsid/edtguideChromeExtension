@@ -2,6 +2,20 @@ var day = ['','วันจันทร์','วันอังคาร','ว�
 var month = ['มกราคม','กุมภาพันธ์','มีนาคม','เมษายน','พฤษภาคม','มิถุนายน','กรกฎาคม','สิงหาคม','กันยายน','ตุลาคม','พฤศจิกายน','ธันวาคม'];
 var notifications = [];
 var notificationTimeout = 20000;
+/* Google Analytics */
+var _gaq = _gaq || [];
+//_gaq.push(['_setAccount', 'UA-18384901-3']);//Edtguide
+_gaq.push(['_setAccount', 'UA-37461640-1']);
+
+
+setTimeout(function(){
+	(function() {
+	  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	  ga.src = 'https://ssl.google-analytics.com/ga.js';
+	  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+},2000);
+
 
 if(localStorage.debug!=undefined&&localStorage.debug=='true'){
 		var isDebug = true;
@@ -75,6 +89,7 @@ function createNotification(data){
 	}
 	if(typeof data.click=="function"){
 		noti.onclick = function(){
+			_gaq.push(['_trackEvent','notification','click',data.title]);
 			data.click(data.url);
 			noti.close();
 		};
@@ -90,7 +105,7 @@ function createNotification(data){
 	notification.push(noti);
 }
 
-function createNotificationByType(data){	
+function createNotificationByType(data){
 	chrome.notifications.create("edtguide-"+data.id,{
 		type:data.type,
 		title:data.title,
@@ -101,6 +116,8 @@ function createNotificationByType(data){
 		notifications[0].timeout = setTimeout(function(){
 			chrome.notifications.clear(id,function(){});
 		},9000);
+		_gaq.push(['_trackPageview','/ext/notification/'+data.title+'.html']);
+		_gaq.push(['_trackEvent','notification','show',data.title]);
 	});
 }
 

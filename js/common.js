@@ -69,13 +69,14 @@ function createNotification(data){
 	if(data.url==undefined){data.url="";}
 	if(data.type==undefined||data.type==""){data.type="default";}
 	
-	var desc = "";
+	//data.desc = data.desc.replace(/ /g,"\t");
+	/*var desc = "";
 	for(i=0;i<Math.ceil(data.desc.length/10);i++){
 		desc =desc+data.desc.substr(i*10,10)+"\t";
 	}
 	data.desc = desc;
 	delete desc;
-	
+	*/
 	if(data.type!='default'){
 		createNotificationByType(data);
 		return true;
@@ -106,6 +107,7 @@ function createNotification(data){
 }
 
 function createNotificationByType(data){
+	if(data.icon==""){data.icon="images/icon128.png";}
 	chrome.notifications.create("edtguide-"+data.id,{
 		type:data.type,
 		title:data.title,

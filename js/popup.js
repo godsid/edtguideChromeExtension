@@ -37,7 +37,7 @@ function randerNotificationNewReview(item,newnode){
 	Debug('randerNotificationNewReview');
 	var data = JSON.parse(item.data);
 	$(newnode).find('a:first').attr('href',data.url);
-	$(newnode).find('.txt-red').html('Reciew: '+data.title);
+	$(newnode).find('.txt-red').html(data.title);
 	$(newnode).find('small').html(data.desc);
 	$(newnode).find('.thb-action img:first').attr('src',data.img);
 	$(newnode).find('figcaption').html('@'+data.title);

@@ -11,6 +11,7 @@ var debug = false;
 
 _gaq.push(['_trackPageview','/ext/popup.html']);
 
+
 if(localStorage.debug!=undefined&&localStorage.debug=='true'){
 	debug = true;
 }
@@ -108,7 +109,12 @@ getNotification();
 
 $('.header a').click(function(){
 	chrome.tabs.create({url:$(this).attr('href')});
-	_gaq.push(['_trackEvent','popup','click','logo']);
+	_gaq.push(['_trackEvent','popup','click',$(this).attr('title')]);
+});
+
+$('.follow-us li a').click(function(){
+	chrome.tabs.create({url:$(this).attr('href')});
+	_gaq.push(['_trackEvent','popup','click',$(this).attr('title')]);
 });
 
 

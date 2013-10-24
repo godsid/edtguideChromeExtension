@@ -30,7 +30,8 @@
 		"webNavigation",
 		"pushMessaging",
 		"cookies",
-		"contextMenus"
+		"contextMenus",
+		"geolocation"
 	],
 	"tts_engine": {
 	    "voices": [

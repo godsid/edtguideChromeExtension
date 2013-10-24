@@ -7,6 +7,12 @@ var _gaq = _gaq || [];
 //_gaq.push(['_setAccount', 'UA-18384901-3']);//Edtguide
 _gaq.push(['_setAccount', 'UA-37461640-1']);
 
+if(navigator.geolocation){
+	navigator.geolocation.getCurrentPosition(function(position){
+		localStorage.lat = position.coords.latitude;
+		localStorage.lng = position.coords.longitude;
+	  });
+}
 
 setTimeout(function(){
 	(function() {

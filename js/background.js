@@ -93,6 +93,7 @@ function getPushData(url){
 	});
 };
 chrome.notifications.onClicked.addListener(function(id){
+		e = notifications[0];
 		chrome.notifications.clear(id,function(){});
 		chrome.tabs.create({url:e.url});
 });

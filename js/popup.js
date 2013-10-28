@@ -74,6 +74,7 @@ function randerNotification(items){
 	delete at;
 	$('.notification li a').click(function(){
 		chrome.tabs.create({url:$(this).attr('href')});
+		_gaq.push(['_trackEvent','popup','click',$(this).find('.txt-red').html()]);
 	});
 }
 function getNotification(){
@@ -87,12 +88,6 @@ function getNotification(){
 			});
 			$('.notification .list').mouseout(function(){
 				$(this).removeClass('over');
-			});
-			
-			$('.notification .list').click(function(e){
-				_gaq.push(['_trackEvent','popup','click',$(this).find('.txt-red').html()]);
-				chrome.tabs.create({url:$(this).find('.detail a:first').attr('href')});
-
 			});
 		}else{
 			//chrome.tabs.create({url:wwwurl});
@@ -108,7 +103,11 @@ function getNotification(){
 getNotification();
 
 $('.header a').click(function(){
-	chrome.tabs.create({url:$(this).attr('href')});
+	if($(this).attr('title')!='Logo'){
+		chrome.tabs.create({url:$(this).attr('href')+'?lat='+localStorage.lat+'&lng='+localStorage.lng});
+	}else{
+		chrome.tabs.create({url:$(this).attr('href')});
+	}
 	_gaq.push(['_trackEvent','popup','click',$(this).attr('title')]);
 });
 

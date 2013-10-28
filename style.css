@@ -5,14 +5,14 @@ a{text-decoration:none}
 a:hover{text-decoration:underline}
 .warpper{width:380px;font-family: tahoma;background: #eaeaea;color: #333}
 .header{position:relative;height:70px;padding:5px;margin:0 auto;border-bottom:solid 1px #e6e6e6;padding-bottom:5px;background:#fff}
-.header .logo{width:240px;height:70px;float:left;}
+.header .logo{width:240px;height:70px;float:left}
 .header .logo img{display:block;margin:0 auto}
 .header .social{position:absolute;top:5px;right:5px;max-width:120px;height:65px;padding:5px 5px 0 0;background:#fff}
 .header .social>div{float:left;margin-left:5px}
-.btn-map{position:absolute;top:5px;right:5px;}
-.btn-map a{ display:block; max-width:120px; height:50px; padding:20px 10px 0;font:16px/20p tahoma; text-align:center; color:#FFF;background:#f14b23; text-shadow:0 1px 0 rgba(0,0,0,0.5);border-radius:.3em; box-shadow:1px 1px 3px rgba(0,0,0,0.5), 0 50px 50px -50px rgba(255,255,255,0.5) inset}
-.btn-map a:hover{ text-decoration:none; opacity:.75}
-.notification .thm-user{}
+.btn-map{position:absolute;top:5px;right:5px}
+.btn-map a{display:block;width:125px;height:70px;padding:0;text-indent:-9999px;background:url(images/btn-map.png) 50% 0 no-repeat}
+.btn-map a br{display:none}
+.btn-map a:hover{text-decoration:none;opacity:.75}
 .social-connect{margin: -10px -10px 10px;padding: 10px;position: relative;text-align: center}
 .social-connect .fb-signin{background: url(images/ic-regis.png) 0 0 no-repeat}
 .social-connect .fb-signin, .social-connect .goo-signin{display: inline-block;height: 63px;margin: 0 auto;text-indent: -9999px;width: 303px}
@@ -49,17 +49,17 @@ a:hover  .ContentInfo .thb-action figcaption{opacity:1;height:auto;visibility:vi
 .ContentInfo .thb-action figcaption:after{content:"";position:absolute;bottom:-5px;left:0;z-index:1;display:block;border-top:5px solid rgba(0,0,0,0.75);border-right:5px solid transparent}
 .ContentInfo .time-device{position:relative}
 .ContentInfo .time-device abbr{font:11px/14px tahoma;color:#999}
-.ContentInfo .time-device .more{position:relative;display:inline-block;font:11px/14px tahoma;color:#555;}
-.ContentInfo .time-device .more:after{content:"";display:block;position:absolute;top:50%;margin-top:-4px;right:-13px;border-left:8px solid #555;border-top:5px solid transparent;border-bottom:5px solid transparent;}
+.ContentInfo .time-device .more{position:relative;display:inline-block;font:11px/14px tahoma;color:#555}
+.ContentInfo .time-device .more:after{content:"";display:block;position:absolute;top:50%;margin-top:-4px;right:-13px;border-left:8px solid #555;border-top:5px solid transparent;border-bottom:5px solid transparent}
 
 .review-img{width:80px;height:80px;border:solid 4px white;border-radius:10px;float:left}
 a:hover .review-img{opacity: 1;filter: none;box-shadow: 0 0 0 1px #970127, 0 0 0 6px #e62379, -3px 3px 3px 8px rgba(0,0,0,0.5)}
 .place-rate{position: relative;width:100px;clear: both;height: 20px;padding: 5px 0 2px 30px;background: url(images/icn-set-place.png) 0 -3px no-repeat;left:60px}
 .rating-star{position: relative;float: left;margin: 0 10px 0 0;width: 100px;height: 20px;background: url(images/rating-star.png) 0 0 no-repeat}
 .score{position: absolute;top: 0;left: 0;height: 20px;background: url(images/rating-star.png) 0 -20px no-repeat;text-indent: -9999px}
-.follow-us{position:relative;clear:both;margin:0 auto;width:131px;height:27px;padding:5px 0 0 59px;background:url(images/follow.png) no-repeat}
-.follow-us li{float:left;list-style-type:none;margin:0 4px 0 0;padding:0;}
-.follow-us li a{display:block;width:26px;height:26px;text-indent:-9999px;background:url(images/follow.png) -59px -5px no-repeat}
-.follow-us li.tw a{background-position:-89px -5px}
-.follow-us li.gg a{background-position:-119px -5px}
-.follow-us li.yt a{background-position:-149px -5px}
+.follow-us{position:relative;clear:both;margin:0 auto;width:130px;height:28px;padding:6px 0 0 71px;background:url(images/follow.png) no-repeat}
+.follow-us li{float:left;list-style-type:none;margin:0 4px 0 0;padding:0}
+.follow-us li a{display:block;width:26px;height:26px;text-indent:-9999px;background:url(images/follow.png) -71px -6px no-repeat}
+.follow-us li.tw a{background-position:-101px -6px}
+.follow-us li.gg a{background-position:-131px -6px}
+.follow-us li.yt a{background-position:-161px -6px}

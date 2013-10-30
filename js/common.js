@@ -5,7 +5,7 @@ var notificationTimeout = 20000;
 /* Google Analytics */
 var _gaq = _gaq || [];
 //_gaq.push(['_setAccount', 'UA-18384901-3']);//Edtguide
-_gaq.push(['_setAccount', 'UA-37461640-1']);
+_gaq.push(['_setAccount', 'UA-18384901-3']);
 
 if(navigator.geolocation){
 	navigator.geolocation.getCurrentPosition(function(position){

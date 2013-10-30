@@ -1,7 +1,7 @@
 {
 	"manifest_version":2,
 	"name": "edtguide.com Notification",
-	"version": "1.0.7",
+	"version": "1.0.8",
 	"description": "www.edtguide.com อัพเดททุกวัน! เรื่อง กินดื่มเที่ยว ใหม่ๆทั่วไทย พร้อมทั้งไม่พลาดเกมชิงรางวัลพิเศษ! จาก EDTguide",
 	"background": {
 					"scripts":["js/jquery.tools.min_1.7.2.js","js/db.js","js/common.js","js/background.js"]

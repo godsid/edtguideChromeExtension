@@ -1,10 +1,10 @@
 {
 	"manifest_version":2,
 	"name": "edtguide.com Notification",
-	"version": "1.0.9",
+	"version": "1.1.0",
 	"description": "www.edtguide.com อัพเดททุกวัน! เรื่อง กินดื่มเที่ยว ใหม่ๆทั่วไทย พร้อมทั้งไม่พลาดเกมชิงรางวัลพิเศษ! จาก EDTguide",
 	"background": {
-					"scripts":["js/jquery.tools.min_1.7.2.js","js/db.js","js/common.js","js/background.js"]
+					"scripts":["js/jquery-1.9.1.min.js","js/db.js","js/common.js","js/background.js"]
 				},
 	"browser_action": {
 		"default_title": "Edtguide.com",
@@ -52,6 +52,6 @@
 		"*"
 	],
 	"content_security_policy":"script-src 'self' https://ssl.google-analytics.com; object-src 'self'"
-	,"key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlbKpckNTS4YPrrKQ7KUvmO2cNTNECKuPgvoahUybuG4yZSxJtBaUnpAwFx4/gFh2K8YI4/MjUD7ghX3Ue9eqXE8ZQ9LPnVo4g0spnCUu45mtKdjFJ/e/kzHKEGkTYPDBZvqd3mJKeLJGCXxt3z+YN1oYTndl9PuOUUwYDzmIEdnYHFW38to5fpxvHLr5erTorPZQQPmE4tOehCBE/Yk5vXUVbo1zWJhzXcZSRghQBAuf3AxYnFNtWZM7L6Hh4gxzPF95qXXtKWt9kh7rpjfPrVpiyGK5UGkS1nNSzlC/WXy4vG/EETrfQlV2HjToC4ZHGe6+NpcHTCQma33SVAsyJwIDAQAB"
+	,"key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlbKpckNTS4YPrrKQ7KUvmO2cNTNECKuPgvoahUybuG4yZSxJtBaUnpAwFx4/gFh2K8YI4/MjUD7ghX3Ue9eqXE8ZQ9LPnVo4g0spnCUu45mtKdjFJ/e/kzHKEGkTYPDBZvqd3mJKeLJGCXxt3z+YN1oYTndl9PuOUUwYDzmIEdnYHFW38to5fpxvHLr5erTorPZQQPmE4tOehCBE/Yk5vXUVbo1zWJhzXcZSRghQBAuf3AxYnFNtWZM7L6Hh4gxzPF95qXXtKWt9kh7rpjfPrVpiyGK5UGkS1nNSzlC/WXy4vG/EETrfQlV2HjToC4ZHGe6+NpcHTCQma33SVAsyJwIDAQAB"	
 	
 }

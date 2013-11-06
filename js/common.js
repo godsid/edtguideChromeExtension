@@ -110,6 +110,7 @@ function createNotification(data){
 	};
 	noti.show();
 	notification.push(noti);
+	document.getElementById('NotificationAlert').play();
 }
 
 function createNotificationByType(data){
@@ -127,5 +128,6 @@ function createNotificationByType(data){
 		_gaq.push(['_trackPageview','/ext/notification/'+data.title+'.html']);
 		_gaq.push(['_trackEvent','notification','show',data.title]);
 	});
+	document.getElementById('NotificationAlert').play();
 }
 
